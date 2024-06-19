@@ -5,8 +5,6 @@ type Props = {
     children: React.ReactNode
  }
 
-const Main: React.FC<Props> = ({ children }) => {
+export const Main: React.FC<Props> = ({ children }) => {
   return <div className="container">{children}</div>
 }
-
-export default Main

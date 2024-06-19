@@ -2,7 +2,7 @@ import React from 'react'
 import Heart from '../../icons/heart'
 import './index.scss'
 
-const CardFavorite: React.FC = () => {
+export const CardFavorite: React.FC = () => {
   return (
     <div className="wrapper-card-favorite">
         <div className="wrap-img-favorite">
@@ -25,5 +25,3 @@ const CardFavorite: React.FC = () => {
     </div>
   )
 }
-
-export default CardFavorite

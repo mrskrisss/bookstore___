@@ -1,27 +1,16 @@
-// import { useState } from 'react'
-import Header from './components/header'
-import Container from './components/container'
-import Footer from './components/footer'
-import Main from './components/main'
-import CardPost from './components/cardPost'
-import CardFavorite from './components/cardFavorite'
+import { RouterProvider } from 'react-router-dom'
+import { router } from './router'
+import { Provider } from 'react-redux'
+import { store } from './redux/store'
 import './App.scss'
 
-function App () {
-  // const [count, setCount] = useState(0)
-
+export default function App () {
   return (
     <>
-      <Container>
-        <Header />
-        <Main>
-          <CardPost />
-          <CardFavorite />
-        </Main>
-        <Footer />
-      </Container>
+      <Provider store={store}>
+        <RouterProvider router={router}>
+        </RouterProvider>
+      </Provider>
     </>
   )
 }
-
-export default App

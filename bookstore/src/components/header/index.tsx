@@ -4,7 +4,7 @@ import Basket from '../../icons/basket'
 import Search from '../../icons/search'
 import './index.scss'
 
-const Header: React.FC = () => {
+export const Header: React.FC = () => {
   return (
     <header className="nav">
       <div className="nav-container">
@@ -27,5 +27,3 @@ const Header: React.FC = () => {
     </header>
   )
 }
-
-export default Header
